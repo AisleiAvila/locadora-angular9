@@ -1,0 +1,35 @@
+<!--AQUI VAI SER CRIADO O MENU-->
+<app-blog-menu></app-blog-menu>
+ 
+<div>
+  <br/><br/>
+  <!--AQUI VAI SER RENDERIZADO AS NOSSAS VIEWS/COMPONENTS-->
+  <router-outlet></router-outlet>
+</div>
+
+<button mat-button (click)="openDialog()">Open dialog</button>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      Uma das três colunas
+    </div>
+    <div class="col-sm">
+      Uma das três colunas
+    </div>
+    <div class="col-sm">
+      Uma das três colunas
+    </div>
+  </div>
+</div>
+
+<!-- Toolbar -->
+<mat-toolbar color="primary" class="app-header">
+  <div><a href="https://www.positronx.io" target="_blank" class="positronx">PositronX.io</a></div>
+  <span class="nav-tool-items">
+    <a mat-button routerLink="login" routerLinkActive="active">Log in</a>
+    <a mat-button mat-raised-button routerLink="register" routerLinkActive="active">Register</a>
+  </span>
+</mat-toolbar>
+
+<router-outlet></router-outlet>
